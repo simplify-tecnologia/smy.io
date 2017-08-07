@@ -15,13 +15,7 @@ before_install:
 before_script:
   - npm install -g gulp-cli
   - npm install -g bower
-  - gem install jekyll-feed
-  - gem install jekyll-gist
-  - gem install jekyll-paginate
-  - gem install jekyll-sitemap
-  - gem install jekyll-seo-tag
-  - gem install jekyll-redirect-from
-  - gem install jekyll-compose
+  - bundler install
   - chmod +x ./build.sh
 
 # execute this script on each commit
