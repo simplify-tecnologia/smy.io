@@ -1,9 +1,9 @@
 #!/bin/bash
 #
 ## only process script when started not by pull request (PR)
-if [ $TRAVIS_PULL_REQUEST == "true" ]; then
+if [ "${TRAVIS_PULL_REQUEST}" = "true" ]; then
   echo "this is PR, exiting"
-  exit 0;
+  exit 0
 fi
 
 # enable error reporting to the console
@@ -18,7 +18,7 @@ gulp build --prod
 rm -rf ../smy.io.gh-pages
 
 # clone 'gh-pages' branch of the repository using encrypted GH_TOKEN for authentification
-git clone -b gh-pages https://${GH_TOKEN}@github.com:smy-io/smy.io.git ../smy.io.gh-pages
+git clone -b gh-pages https://${GH_TOKEN}@github.com/smy-io/smy.io.git ../smy.io.gh-pages
 
 # copy generated HTML site to 'gh-pages' branch
 cp -R dist/* ../smy.io.gh-pages
