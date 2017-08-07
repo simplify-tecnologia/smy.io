@@ -1,0 +1,64 @@
+.service-area
+  margin-top: 80px
+
+.service-title
+
+  > h3
+    font-size: em(18)
+    font-weight: 600
+    margin-left: 112px
+
+  &
+    position: relative
+
+  &::before
+    background: $orange none repeat scroll 0 0
+    bottom: -21px
+    content: ""
+    height: 4px
+    left: 0
+    position: absolute
+    transform: skew(-20deg)
+    width: 100%
+
+  .icofont,
+    float: left
+    position: relative
+    &,
+    &::before
+    &::after
+      transition: all 500ms ease-in-out
+
+    &::before
+      color: #fff
+      font-size: 30px
+      left: 35px
+      position: absolute
+      top: -8px
+      z-index: 2
+
+    &::after
+      background: $black none repeat scroll 0 0
+      content: ""
+      height: 60px
+      left: 12px
+      position: absolute
+      top: -21px
+      transform: skew(-20deg)
+      width: 80px
+      z-index: 1
+
+.service-details
+  p
+    margin-top: 40px
+
+[class^=service-info-]
+  .service-title:hover
+    .icofont
+      &::before
+        color: $black
+      &::after
+        background: $orange
+
+  &:nth-last-child(-n+3)
+    margin-top: 80px

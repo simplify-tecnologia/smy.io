@@ -1,0 +1,71 @@
+.navbar
+  border: 0 transparent
+  margin-bottom: 0
+  min-height: 80px
+  border-radius: 0px
+
+.navbar-collapse
+  ul
+    margin-right: 0
+
+.navbar-default
+  .navbar-nav
+    li
+      background: $orange none repeat scroll 0 0
+      margin: 0 rem(10)
+      transform: skew(-18deg)
+      width: 160px
+      text-align: center
+
+      transition: all 500ms ease-in-out
+
+      a
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+        font-family: "Raleway", sans-serif
+        font-size: 16px
+        font-weight: 400
+        text-transform: uppercase
+        transform: skew(18deg)
+
+    .active a,
+    .active a:hover,
+    > .active > a:focus
+      outline: none
+      font-weight: 600
+
+  ul.navbar-nav
+    li
+     a:hover,
+     a:focus
+      font-weight: 600
+
+  .navbar-nav
+    li:hover,
+    li.active
+      background: $silver
+
+.navbar-brand
+  padding: 30px 15px
+
+.navbar-default
+  background-color: rgba($black, 0.4)
+  transition: background-color 500ms ease-in-out
+
+.navbar-header
+  & > a.navbar-brand
+    img
+      margin-top: rem(-15)
+
+.navbar-active
+  &.navbar-default
+    background-color: rgba($black, 0.95)
+    border-bottom: none
+
+  .navbar-nav > li > a
+    top: 0
+
+  .navbar-fixed-top
+    top: 0
+
+.navbar-collapse ul
+  margin-right: 0

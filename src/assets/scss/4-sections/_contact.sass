@@ -1,0 +1,118 @@
+.contact
+  background: #f3f3f3
+
+[class^=contact-info-]
+  background: $orange
+  height: 60px
+  padding: 16px 0
+
+  .icofont
+    &::before
+      color: $white
+      font-size: 25px
+      left: 36px
+      margin-top: -12px
+      position: absolute
+      top: 50%
+      z-index: 2
+
+    &::after
+      background: $black
+      width: 67px
+      height: 60px
+      position: absolute
+      content: ""
+      left: 15px
+      top: 0
+      z-index: 1
+
+  p
+    color: $white
+    margin-top: 2px
+    margin-left: 88px
+
+.form-group
+  position: relative
+
+  input[type="text"],
+  input[type="email"],
+  textarea
+    background: #fff
+    border: none
+    border-bottom: 2px solid $gray-dark
+    height: 60px
+    border-radius: 0
+    font-family: 'Roboto Slab', sans-serif
+    font-weight: 300
+    padding: 0 0 0 60px
+    box-shadow:none
+    font-size: 16px
+    margin-top: 30px
+
+  .icofont::before
+    bottom: 20px
+    font-size: 25px
+    left: 18px
+    position: absolute
+    color: $orange
+
+    transition: all 500ms ease-in-out
+
+  textarea
+    height: 150px
+    padding: 20px 0 0 60px
+
+  .icofont.icofont-ui-note::before
+    bottom: 0
+    left: 18px
+    top: 20px
+
+  input[type="text"],
+  input[type="email"],
+  textarea
+    transition: all 500ms ease-in-out
+
+    &:hover, &:focus
+      box-shadow: 0 0 20px rgba($orange,0.2)
+      border-color: $orange
+
+  &:hover
+    .icofont::before
+      color: $black
+
+.btn.btn-submit.form-control
+  background: $black none repeat scroll 0 0
+  border: medium none
+  border-radius: 0
+  color: $white
+  font-family: 'Raleway', sans-serif
+  font-size: 16px
+  height: 60px
+  margin-top: 15px
+  padding: 19px 0
+  text-transform: uppercase
+
+  transition: all 500ms ease-in-out
+
+  &:hover,
+  &:focus
+    background: $orange
+    outline: none
+
+
+.input-email-status,
+.input-subject-status,
+.input-fname-status
+  position: absolute
+  top: -30px
+
+  p
+    font-size: 12px;
+    color: $red
+
+    span
+      color: $red
+      margin-right: 10px
+
+.input-message-status
+  top: 0

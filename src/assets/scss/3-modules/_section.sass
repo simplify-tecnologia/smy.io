@@ -1,0 +1,63 @@
+.section-padding
+  padding: 110px 0
+
+.content-area
+  margin-top: 80px
+
+
+.section-title-1,
+.section-title-2
+  margin-top: rem(-26)
+  position: relative
+
+  &::before
+    background: $orange none repeat scroll 0 0
+    bottom: 19px
+    content: ""
+    height: 46px
+    position: absolute
+    width: 10px
+
+  &::after
+    background: $black none repeat scroll 0 0
+    bottom: 0
+    content: ""
+    height: 19px
+    position: absolute
+    width: 10px
+
+  h1
+    font-size: em(30)
+    font-weight: 700
+    line-height: 46px
+    margin-top: 0
+    margin-bottom: 0
+
+  p
+    line-height: 19px
+    margin-top: 0
+    margin-bottom: 0
+
+.section-title-1
+  &::before
+    left: 0
+
+  &::after
+    left: 0
+
+  h1, p
+    margin-left: 30px
+
+
+.section-title-2
+  text-align: right
+  
+  &::before
+    right: 0
+
+  &::after
+    right: 0
+
+  h1, p
+    margin-right: 30px
+

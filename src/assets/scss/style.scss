@@ -1,0 +1,28 @@
+
+
+
+// 1 - TOOLS
+@import '1-tools/fonts';
+@import '1-tools/vars';
+@import '1-tools/mixin';
+@import '1-tools/bower';
+@import '1-tools/icofont';
+
+
+// 2 - BASICS
+@import '2-basics/body-element';
+@import '2-basics/selection-colors';
+@import '2-basics/links';
+
+
+// 3 - MODULES
+@import '3-modules/preloader';
+@import '3-modules/navbar';
+@import '3-modules/header';
+@import '3-modules/section';
+
+// 4 - SECTIONS
+@import '4-sections/about';
+@import '4-sections/service';
+@import '4-sections/contact';
+@import '4-sections/footer';

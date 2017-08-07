@@ -1,0 +1,17 @@
+{
+  "name": "coming",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "jquery-smooth-scroll": "jquery.smooth-scroll#^2.0.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  }
+}
