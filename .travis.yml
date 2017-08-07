@@ -8,12 +8,12 @@ cache:
   - node_modules
 
 before_install:
-  - rvm install 2.4.0
+  - rvm install ruby-2.4.0
   - rvm use 2.4.0 --fuzzy
   - export GEMDIR=$(rvm gemdir)
 
 before_script:
-  - npm install -g gulp
+  - npm install -g gulp-cli
   - npm install -g bower
   - gem install jekyll-feed
   - gem install jekyll-gist
