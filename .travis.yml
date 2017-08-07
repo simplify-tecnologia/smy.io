@@ -1,0 +1,40 @@
+language: node_js
+
+node_js:
+  - '6'
+  - '5'
+
+cache:
+  directories:
+  - node_modules
+
+before_install:
+  - rvm install 2.4.0
+  - rvm use 2.4.0 --fuzzy
+  - export GEMDIR=$(rvm gemdir)
+
+before_script:
+  - npm install -g gulp
+  - npm install -g bower
+  - gem install jekyll-feed
+  - gem install jekyll-gist
+  - gem install jekyll-paginate
+  - gem install jekyll-sitemap
+  - gem install jekyll-seo-tag
+  - gem install jekyll-redirect-from
+  - gem install jekyll-compose
+  - chmod +x ./build.sh
+
+# execute this script on each commit
+script: "./build.sh"
+
+# only take into account 'master' branch
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - secure: 157dd1d2fc1e4ecda0843e09e1e4dc29342fd6eb
+
+sudo: false # route your build to the container-based infrastructure for a faster build
