@@ -21,7 +21,7 @@ rm -rf ../smy.io.gh-pages
 git clone -b gh-pages https://${GH_TOKEN}@github.com:smy-io/smy.io.git ../smy.io.gh-pages
 
 # copy generated HTML site to 'gh-pages' branch
-cp -R public/* ../smy.io.gh-pages
+cp -R dist/* ../smy.io.gh-pages
 
 # commit and push generated content to 'gh-pages' branch
 # since repository was cloned in write mode with token auth - we can push there
